@@ -1,0 +1,22 @@
+{
+  "name": "dev-node",
+  "version": "1.0.0",
+  "description": "This is a test",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -L --watch src src/index.js",
+    "test": "mocha --recursive ./test"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "author": "thajo",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "jscs": "^3.0.7",
+    "jshint": "^2.9.3",
+    "mocha": "^3.1.0",
+    "nodemon": "^1.10.2"
+  }
+}
