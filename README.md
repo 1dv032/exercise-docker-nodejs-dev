@@ -43,7 +43,7 @@ docker build . -t thajo/node
 docker run -i -t -v $PWD/app/:/opt/app/ -p 80:8080 thajo/node /bin/bash /opt/app/script/start.sh
 
 # Just run the tests
-docker run -i -t thajo/node /bin/bash /opt/app/script/test.sh
+docker run -i -t -rm thajo/node /bin/bash /opt/app/script/test.sh
 ```
 
 ### How to do this?
