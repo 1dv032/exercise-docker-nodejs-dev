@@ -1,7 +1,14 @@
 # excercise-docker-nodejs-dev
 
-In this exercise you should try to get a feeling of how to build and create a Docker container. The main idea with this exercise is to write a Dockerfile that will build a kind of development template for a node.js developer. The project template is located at this repository.
-
+In this exercise you should try to get a feeling of how to build and create a Docker container. The main idea with this exercise is to write a Dockerfile that will build a kind of development template for a node.js developer. The project template is located at this repository, to get the files to your exercise repo use the following commands:
+```bash
+#First navigate to your exercise repository
+git remote add docker-nodejs-dev https://github.com/1dv032/exercise-docker-nodejs-dev.git
+git subtree add --prefix=docker-nodejs-dev --squash docker-nodejs-dev master
+cd docker-nodejs-dev
+```
+You should now have a folder called docker-nodejs-dev in your exercise repo.
+ 
 You should create a dockerfile that creates a container that can run this project so that a developer just have to build your container and run it with a specific docker run command. See under "docker commands" below...
 
 You are free to form your your dockerfile but:
