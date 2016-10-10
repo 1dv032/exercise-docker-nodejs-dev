@@ -50,9 +50,10 @@ docker run -i -t -rm thajo/node /bin/bash /opt/app/script/test.sh
 First of all go through the ["Get Started with Docker"](https://docs.docker.com/engine/getstarted/). This will guide your through the installation of Docker and how to start working with it. The ["Learn by example"](https://docs.docker.com/engine/tutorials/#/learn-by-example) is also a good resource to learn more about how Docker works.
 
 #### Article with tips
-http://bitjudo.com/blog/2014/03/13/building-efficient-dockerfiles-node-dot-js/
-http://paislee.io/the-ultimate-nodejs-development-setup-with-docker/
-https://nodesource.com/blog/8-protips-to-start-killing-it-when-dockerizing-node-js/  
+
+* http://bitjudo.com/blog/2014/03/13/building-efficient-dockerfiles-node-dot-js/
+* http://paislee.io/the-ultimate-nodejs-development-setup-with-docker/
+* https://nodesource.com/blog/8-protips-to-start-killing-it-when-dockerizing-node-js/  
 
 #### Some good commands when learning docker
 The more common commands you find in the documentation...Here are some "trick-command" when learning docker. Use with caution since they stop/remove all containers/images.
