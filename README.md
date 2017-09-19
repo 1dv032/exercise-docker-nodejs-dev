@@ -42,8 +42,6 @@ docker build . -t thajo/node
 # running the start-script through bin/bash in container (starting the nodemon server - listening for changes)
 docker run -i -t -v $PWD/app/:/opt/app/ -p 8080:8080 thajo/node /bin/bash /opt/app/script/run.sh
 
-# Just run the tests
-docker run -i -t -rm thajo/node /bin/bash /opt/app/script/test.sh
 ```
 
 ### How to do this?
