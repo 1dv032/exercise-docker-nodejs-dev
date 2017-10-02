@@ -13,7 +13,7 @@ You should create a dockerfile that creates a container that can run this projec
 
 You are free to form your your dockerfile but:
 
-* The Dockerfile should use the node:6 as a base image.
+* The Dockerfile should use the node:latest as a base image.
 * The Dockerfile should take this repos node project-template and copy the files into the container at creation.
 * The container should expose port 8080 as the port for the node.js web application.
 
@@ -33,14 +33,14 @@ Your Dockerfile should be written so you could use commands like this to build a
 
 
 ```
-# Build the Dockerfile (in the same directory) and tag it with the name "thajo/node"
-docker build . -t thajo/node
+# Build the Dockerfile (in the same directory) and tag it with the name "<your-id>/node"
+docker build . -t <your-id>/node
 
 # Run the build container with an interactive terminal
 # Mounting the host-folder $PWD/app/ to the container-folder /opt/app - making changes on host appear # in container
 # port 80 on host should connect to port 8080 in container
 # running the start-script through bin/bash in container (starting the nodemon server - listening for changes)
-docker run -i -t -v $PWD/app/:/opt/app/ -p 8080:8080 thajo/node /bin/bash /opt/app/script/run.sh
+docker run -i -t -v $PWD/app/:/opt/app/ -p 8080:8080 <your-id>/node /bin/bash /opt/app/script/run.sh
 
 ```
 
