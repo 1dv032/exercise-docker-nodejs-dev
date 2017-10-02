@@ -40,7 +40,7 @@ docker build . -t <your-id>/node
 # Mounting the host-folder $PWD/app/ to the container-folder /opt/app - making changes on host appear # in container
 # port 80 on host should connect to port 8080 in container
 # running the npm start-script (starting the nodemon server - listening for changes), mounting the app directory to the server
-docker run -i -t -v $PWD/:/opt/app/ -p 8080:8080 <your-id>/node npm start
+docker run -i -t -v $PWD:/opt/app/ -p 8080:8080 <your-id>/node npm start
 
 ```
 
